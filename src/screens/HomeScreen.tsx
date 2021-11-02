@@ -90,6 +90,7 @@ export const HomeScreen: NavigationFunctionComponent<Props> = props => {
       />
     );
   };
+  
   return (
     <Root>
       <Header />

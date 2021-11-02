@@ -4,6 +4,7 @@ import {NavigationFunctionComponent} from 'react-native-navigation';
 import {getScreenStyle} from '../misc/getScreenStyle';
 import CountryFlag from 'react-native-country-flag';
 import styled from 'styled-components/native';
+import {Navigation} from 'react-native-navigation';
 
 interface IState {
   countries: {
@@ -62,7 +63,23 @@ export const CountryScreen: NavigationFunctionComponent<Props> = props => {
 
   const handleLanguages = (language: any) => {
     return language.map((lang: any) => (
-      <ListItem>
+      <ListItem
+        key={lang.id}
+        onPress={() =>
+          Navigation.push(props.componentId, {
+            component: {
+              name: 'LanguageScreen',
+              id: lang.name,
+              options: {
+                topBar: {
+                  title: {
+                    text: 'Language Screen',
+                  },
+                },
+              },
+            },
+          })
+        }>
         <LangText>{lang.name}</LangText>
       </ListItem>
     ));
