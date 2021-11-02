@@ -5585,6 +5585,11 @@ react-native-codegen@^0.0.6:
     jscodeshift "^0.11.0"
     nullthrows "^1.1.1"
 
+react-native-country-flag@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/react-native-country-flag/-/react-native-country-flag-1.1.4.tgz#01bf58474812b6c89d8e14718deb86231eef356c"
+  integrity sha512-rwWPJtQxPNJbyInDVhNo3EYaT/jbU5DxWE52sYTg9o8emNmuM1vyMXyRexVtuFtQs/7mQh/RK39J3+pI+OTnBA==
+
 react-native-navigation@^7.12.0:
   version "7.12.0"
   resolved "https://registry.yarnpkg.com/react-native-navigation/-/react-native-navigation-7.12.0.tgz#c63dcbff1d95e3e98fee523a11d90440fe881f51"
