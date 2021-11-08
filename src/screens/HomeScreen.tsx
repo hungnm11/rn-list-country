@@ -54,7 +54,7 @@ export const HomeScreen: NavigationFunctionComponent<Props> = props => {
     `;
     try {
       const res = await fetch(
-        'https://api.everbase.co/graphql?apikey=1a784e37-7ce8-4913-9fef-7b669ee578d6',
+        'https://api.everbase.co/graphql?apikey=YOUR_KEY',
         {
           method: 'POST',
           headers: {'Content-Type': 'application/json'},
